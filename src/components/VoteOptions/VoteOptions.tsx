@@ -6,7 +6,7 @@ interface VoteOptionsProps {
     onReset:()=> void
     canReset:boolean
 }
-const VoteOptions = ({onVote, onReset, canReset}:VoteOptionsProx) => {
+const VoteOptions = ({onVote, onReset, canReset}:VoteOptionsProps) => {
   return (
       <div className={css.container}>
           <button className={css.button} onClick={()=>onVote("good")}>Good</button>
