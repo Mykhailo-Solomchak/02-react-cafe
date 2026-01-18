@@ -1,6 +1,6 @@
 import type { Votes } from "../../types/votes"
 import styles from "./VoteStats.module.css"
-interface VoteStats{votes:Votes;totalVotes:number;positiveRate:number}
+interface VoteStatsProps{votes:Votes;totalVotes:number;positiveRate:number}
 
 const VoteStats = ({votes,totalVotes,positiveRate}:VoteStats) => {
   return (
